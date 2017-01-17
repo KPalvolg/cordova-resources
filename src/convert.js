@@ -8,7 +8,14 @@ var gm 	= require('gm').subClass({imageMagick: false});
  * });
  */
 exports.resize = function(path, dest, dimensions) {
-	var image = gm(path).resize(dimensions.width, dimensions.height);
+    var w = dimensions.width;
+    var h = dimensions.height;
+    var side = Math.max(w, h);
+	var image = gm(path).resize(side, side);
+    if (w != h) {
+        image = image.gravity('Center');
+        image = image.crop(w, h);
+    }
 	var deferred = Q.defer();
 
 	image.write(dest, function(err, data) {
