@@ -1,5 +1,5 @@
 [
-  {"dest": "{projectName}/Resources/icons/icon",              "width": 57,  "height": 57},
+  {"dest": "{projectName}/Resources/icons/icon.png",              "width": 57,  "height": 57},
   {"dest": "{projectName}/Resources/icons/icon-small.png",    "width": 29,  "height": 29},
   {"dest": "{projectName}/Resources/icons/icon-40.png",       "width": 40,  "height": 40},
   {"dest": "{projectName}/Resources/icons/icon-50.png",       "width": 50,  "height": 50},
