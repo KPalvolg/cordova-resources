@@ -1,10 +1,14 @@
 [
-  { "dest" : "res/drawable-land-ldpi/screen.png",  "width" : 320, "height": 200 },
+  { "dest" : "res/drawable-land-ldpi/screen.png",  "width" : 320, "height": 240 },
   { "dest" : "res/drawable-land-mdpi/screen.png",  "width" : 480, "height": 320 },
   { "dest" : "res/drawable-land-hdpi/screen.png",  "width" : 800, "height": 480 },
   { "dest" : "res/drawable-land-xhdpi/screen.png", "width" : 1280, "height": 720 },
-  { "dest" : "res/drawable-port-ldpi/screen.png",  "width" : 200, "height": 320 },
+  { "dest" : "res/drawable-land-xxhdpi/screen.png", "width" : 1600, "height": 960 },
+  { "dest" : "res/drawable-land-xxxhdpi/screen.png", "width" : 1920, "height": 1280 },
+  { "dest" : "res/drawable-port-ldpi/screen.png",  "width" : 240, "height": 320 },
   { "dest" : "res/drawable-port-mdpi/screen.png",  "width" : 320, "height": 480 },
   { "dest" : "res/drawable-port-hdpi/screen.png",  "width" : 480, "height": 800 },
-  { "dest" : "res/drawable-port-xhdpi/screen.png", "width" : 720, "height": 1280 }
+  { "dest" : "res/drawable-port-xhdpi/screen.png", "width" : 720, "height": 1280 },
+  { "dest" : "res/drawable-port-xxhdpi/screen.png", "width" : 960, "height": 1600 },
+  { "dest" : "res/drawable-port-xxxhdpi/screen.png", "width" : 1280, "height": 1920 }
 ]
