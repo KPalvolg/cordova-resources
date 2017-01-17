@@ -107,7 +107,7 @@ var getProjectName = function () {
 
 			projectName = result.widget.name[0];
 				console.log('------------------------------------------'.green());
-				console.log("The name your project is ".green() + projectName .green()+ "!".green());
+				console.log("The name of your project is ".green() + projectName .green()+ "!".green());
 				console.log('------------------------------------------'.green());
 
 				deferred.resolve(projectName);
@@ -143,7 +143,7 @@ function generate (pwd, platform) {
 						fs.accessSync(imagePath, fs.R_OK);
 						fs.accessSync(path.dirname(item.dest), fs.W_OK);
 						console.log('-----------------------'.green());
-						console.log("Generate your resources...".green() + imagePath .green() );
+						console.log("Generate your resources...".green() + item.dest .green() );
 
 						deferred.resolve(convert.resize(imagePath, item.dest, item));
 						console.log();
