@@ -1,11 +1,11 @@
 {
   "name": "cordova-resources",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Generate your resources easily.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felipesousa/cordova-resources.git"
+    "url": "git+https://github.com/gotojmp/cordova-resources.git"
   },
   "keywords": [
     "cordova",
@@ -13,6 +13,7 @@
     "crop",
     "Splash",
     "imagemagick",
+    "graphicsmagick",
     "icons",
     "generator",
     "resources"
@@ -22,13 +23,14 @@
   },
   "author": [
     "Felipe Sousa <felipzbr@gmail.com>",
-    "Victor Queiroz <victorcqueirozg@gmail.com>"
+    "Victor Queiroz <victorcqueirozg@gmail.com>",
+    "Gotojmp <gotojmp@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/felipesousa/cordova-resources/issues"
+    "url": "https://github.com/gotojmp/cordova-resources/issues"
   },
-  "homepage": "https://github.com/felipesousa/cordova-resources#readme",
+  "homepage": "https://github.com/gotojmp/cordova-resources#readme",
   "dependencies": {
     "gm": "^1.20.0",
     "lodash": "^3.10.1",
