@@ -119,7 +119,7 @@ var getProjectName = function () {
 
 function generate (pwd, platform) {
 	var promises = [];
-	var platforms = fs.readdirSync('platforms');
+	// var platforms = fs.readdirSync('platforms');
 	if(!platform) {
 		return Q.all(_.map(platforms, function(name) {
 			return generate(pwd, name);
