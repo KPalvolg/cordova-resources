@@ -4,5 +4,11 @@
   {"dest": "res/drawable-hdpi/icon.png",      "width": 72, "height": 72},
   {"dest": "res/drawable-xhdpi/icon.png",     "width": 96, "height": 96},
   {"dest": "res/drawable-xxhdpi/icon.png",     "width": 144, "height": 144},
-  {"dest": "res/drawable-xxxhdpi/icon.png",     "width": 192, "height": 192}
+  {"dest": "res/drawable-xxxhdpi/icon.png",     "width": 192, "height": 192},
+  {"dest": "res/mipmap-ldpi/icon.png",      "width": 36, "height": 36},
+  {"dest": "res/mipmap-mdpi/icon.png",      "width": 48, "height": 48},
+  {"dest": "res/mipmap-hdpi/icon.png",      "width": 72, "height": 72},
+  {"dest": "res/mipmap-xhdpi/icon.png",     "width": 96, "height": 96},
+  {"dest": "res/mipmap-xxhdpi/icon.png",     "width": 144, "height": 144},
+  {"dest": "res/mipmap-xxxhdpi/icon.png",     "width": 192, "height": 192}
 ]
