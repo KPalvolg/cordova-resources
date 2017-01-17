@@ -44,7 +44,7 @@ var hasImages = function (platform) {
 
 		return deferred.promise;
 	}));
-});
+};
 
 var hasPlatform = function () {
 	var deferred = Q.defer();
