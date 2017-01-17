@@ -22,7 +22,8 @@ var hasImages = function (platform) {
 		return plat == platform;
 	}), function (platform){
 		_.forEach(resources, function(resource){
-			images.push(`${platform}-${resource}.png`);
+			// images.push(`${platform}-${resource}.png`);
+            images.push(`resources/${resource}.png`);
 		});
 	});
 
@@ -133,7 +134,8 @@ function generate (pwd, platform) {
 				var items = JSON.parse(fs.readFileSync(`${__dirname}/../platforms/${platform}/${resource}.json`));
 
 				_.forEach(items, function(item) {
-					var imagePath = `${platform}-${resource}.png`;
+					// var imagePath = `${platform}-${resource}.png`;
+                    var imagePath = `resources/${resource}.png`;
 
 					item.dest = `platforms/${platform}/` + item.dest.replace('{projectName}', projectName);
 
