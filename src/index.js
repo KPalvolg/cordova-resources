@@ -137,7 +137,7 @@ function generate (pwd, platform) {
 					// var imagePath = `${platform}-${resource}.png`;
                     var imagePath = `resources/${resource}.png`;
 
-					item.dest = `platforms/${platform}/` + item.dest.replace('{projectName}', projectName);
+					item.dest = item.dest.replace('{projectName}', projectName);
 
 					mkdirp(path.dirname(item.dest), function() {
 						fs.accessSync(imagePath, fs.R_OK);
