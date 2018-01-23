@@ -1,30 +1,21 @@
-var Q		= require('q');
-var gm 	= require('gm').subClass({imageMagick: false});
+var Q    = require('q');
+var sharp   = require('sharp');
 
 /**
  * convert.resize('./android-screen.png', 'platforms/android/res/(...)/screen.png', {
- *   width: 1000,
- *   height: 200
+ *   width: 1000,
+ *   height: 200
  * });
  */
 exports.resize = function(path, dest, dimensions) {
-    var w = dimensions.width;
-    var h = dimensions.height;
-    var side = Math.max(w, h);
-	var image = gm(path).resize(side, side);
-    if (w != h) {
-        image = image.gravity('Center');
-        image = image.crop(w, h);
-    }
-	var deferred = Q.defer();
+  var deferred = Q.defer();
+  sharp(path).resize(dimensions.width, dimensions.height).toFile(dest, function(err, data) {
+    if(err) {
+      deferred.reject(err);
+    } else {
+      deferred.resolve(data);
+    }
+  });
 
-	image.write(dest, function(err, data) {
-		if(err) {
-			deferred.reject(err);
-		} else {
-			deferred.resolve(data);
-		}
-	});
-
-	return deferred.promise;
+  return deferred.promise;
 };
